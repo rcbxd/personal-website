@@ -1,0 +1,129 @@
+@keyframes pageLoadLinks {
+  from {
+    margin-left: 0;
+    margin-right: 0;
+    opacity: 0.8;
+  }
+  to {
+    margin-left: 10px;
+    margin-right: 10px;
+    opacity: 1;
+  }
+}
+
+@keyframes pageLoadText {
+  from {
+    transform: scaleX(0.9);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+body {
+  font-family: "Lekton";
+  color: #606060;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 10%;
+  overflow-x: hidden;
+  user-select: none;
+}
+
+.content {
+  text-align: center;
+  display: flex;
+  width: 100%;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+h1 {
+  color: #47b07a;
+}
+
+h2 {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin: 15px !important;
+  color: #606060;
+}
+
+.contacts a {
+  text-decoration: none;
+  color: inherit;
+  margin: 10px;
+  transition: all 0.2s ease-out;
+}
+
+.contacts {
+  display: flex;
+  margin-top: 20px;
+  margin: 0 auto !important;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.contacts i {
+  font-weight: 100;
+  font-size: 2rem;
+}
+
+.user-logo {
+  height: 250px;
+  width: 250px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  margin: 0 auto;
+  opacity: 0.9;
+  -webkit-box-shadow: -1px 10px 92px -21px rgba(28, 31, 76, 1);
+  -moz-box-shadow: -1px 10px 92px -21px rgba(28, 31, 76, 1);
+  box-shadow: -1px 10px 92px -21px rgba(28, 31, 76, 1);
+}
+
+h3 {
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.title-medium {
+  margin-block-end: 0;
+  margin-block-start: 0;
+  margin: 5px;
+}
+
+.title-large {
+  margin-block-end: 0;
+  margin-top: 50px;
+  font-weight: bolder;
+  font-size: 3rem;
+}
+
+.nav {
+  margin: 0 auto;
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 1.5rem;
+  margin-top: 10px;
+  transition: all 0.2s ease-out;
+}
+
+a {
+  color: #606060;
+}
+
+a:hover {
+  color: #47b07a;
+}

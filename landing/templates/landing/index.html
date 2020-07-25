@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr" style="scroll-behavior: smooth;">
+   <head>
+        <meta charset="utf-8" />
+        <title>rcbxd (Anthony Skorupskyy)</title>
+        <meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=no"/>
+        <meta name="description" content="Anthony Skoruspkyy, a.k.a. dotwarp – software developer and sound producer." />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+        <link rel="stylesheet" href="{% static "landing/style.css" %}" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lekton&amp;display=swap" rel="stylesheet" />      <link rel="icon" type="image/png" href="/favicon/favicon.ico" />
+        <meta name="google-site-verification" content="FImyTPCQdBPqsRTogf6KclAvz8Ex0YsW1UltIU5MwEc" />
+   </head>
+   <body>
+        <div class="content">
+            <div class="user-logo" style="background-image: url({{master.picture.url}})"></div>
+            <h1 class="title-large">{{master.nickname}}</h1>
+            <h2 class="title-medium">{{master.name}}</h2>
+            <h3 class="title-medium">{{master.description}}</h3>
+            <div class="group-social contacts">
+                <a href="{{master.instagram_link}}">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="{{master.soundcloud_link}}">
+                    <i class="fab fa-soundcloud"></i>
+                </a>
+                <a href="{{master.telegram_link}}">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <a href="{{master.twitter_link}}">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="{{master.github_link}}">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <div class="nav">
+                <a href="/blog/">/blog</a>
+                <a href="/projects/">/projects</a>
+                <a href="/personal/">/personal</a>
+                <a href="/skills/">/skills</a>
+            </div>
+      </div>
+      <script src="{% static "landing/script.js" %}"></script>
+   </body>
+</html>
