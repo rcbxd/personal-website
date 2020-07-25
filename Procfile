@@ -1,3 +1,3 @@
 release: pipenv run migrate
 
-web: pipenv run gunicorn website.wsgi
+web: gunicorn website.wsgi
