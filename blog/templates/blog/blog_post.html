@@ -1,0 +1,31 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8, user-scalable=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static "blog/post.css" %}" type="text/css">
+    <link rel="stylesheet" href="{% static "blog/prism.css" %}" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lekton&amp;display=swap" rel="stylesheet">
+    <script src="{% static "blog/post.js" %}" defer></script>
+    <script src="{% static "blog/prism.js" %}" defer></script>
+    <title>{{post.title}} | rcbxd</title>
+</head>
+
+<body>
+    <div class="">
+        <h1 class="title-large"><a href="../">back</a>/{{post.title.lower}}</h1>
+        <h3>{{post.description}}</h3>
+        <div id="post_body">
+            <input type="hidden" id="post_body_text" value="{{post.body}}">
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/showdown/1.9.1/showdown.min.js"></script>
+</body>
+</html>
