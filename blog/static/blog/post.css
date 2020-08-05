@@ -77,3 +77,13 @@ a {
 a:hover {
     color: #47b07a;
 }
+
+.post_body_image {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+p {
+    font-size: 1.5rem;
+}
